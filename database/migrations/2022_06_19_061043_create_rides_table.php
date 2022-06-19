@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('rides', function (Blueprint $table) {
             $table->id();
+            $table->integer('driver_id');
+            $table->integer('rider_id');
+            $table->string('pickup_location');
+            $table->string('destination_location');
             $table->timestamps();
         });
     }
