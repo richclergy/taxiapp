@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('make');
             $table->string('model');
             $table->string('year');
-            $table->boolean('isengaged')->default(0);
+            $table->boolean('is_engaged')->default(0);
             $table->integer('vehicle_type_id');
             $table->timestamps();
         });

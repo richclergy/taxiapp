@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Vehicle extends Model
 {
     use HasFactory;
+    
+    /**
+    * The attributes that are mass assignable.
+    *
+    * @var array<int, string>
+    */
+   protected $fillable = [
+       'make',
+       'model',
+       'year',
+       'is_engaged',
+       'vehicle_type_id',
+   ];
 }

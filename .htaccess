@@ -1,0 +1,7 @@
+SetEnv SENDGRID_API_KEY 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
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^taxiapp [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.taxiapp$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]
